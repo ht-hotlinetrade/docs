@@ -8,10 +8,6 @@ export default defineConfig({
       label: 'Русский',
       lang: 'ru',
     },
-    // en: {
-    //   label: 'English',
-    //   lang: 'en',
-    // },
   },
   themeConfig: {
     nav: [
@@ -31,9 +27,6 @@ export default defineConfig({
             items: [
               { text: 'YOMONEY', link: '/docs/payment-system/connecting/yomoney' },
               { text: 'FREEKASSA', link: '/docs/payment-system/connecting/freekassa' },
-              { text: 'PALYCH', link: '/docs/payment-system/connecting/palych' },
-              { text: 'TBANK', link: '/docs/payment-system/connecting/tbank' },
-              { text: 'VTB', link: '/docs/payment-system/connecting/vtb' },
             ]
           },
         ]
@@ -51,6 +44,19 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Прочее',
+        items: [
+          {
+            text: 'Смена позиции блоков',
+            link: '/docs/other/change-sort-order'
+          },
+          {
+            text: 'Просмотр/вайп корзины игрока',
+            link: '/docs/other/view-wipe-player-cart'
+          }
+        ]
+      },
+      {
         text: 'Расширенный редактор',
         items: [
           {
@@ -62,6 +68,7 @@ export default defineConfig({
           {
             text: 'JS',
             items: [
+              { text: 'Важно перед началом использования', link: '/docs/custom-editor/js/important-before-start' },
             ]
           }
         ]
