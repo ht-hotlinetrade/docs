@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "HOTLINETRADE"
   text: "Документация"
-  tagline: Discover limitless possibilities with comprehensive setup documentation.
+  tagline: Откройте для себя безграничные возможности с помощью подробной документации по настройке.
   actions:
     - theme: brand
       text: Документация

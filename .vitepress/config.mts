@@ -44,6 +44,17 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Товар',
+        items: [
+          {
+            text: 'Зоны выдачи',
+            items: [
+              { text: 'Как они работают', link: '/docs/product/zones/info' },
+            ]
+          },
+        ]
+      },
+      {
         text: 'Прочее',
         items: [
           {
