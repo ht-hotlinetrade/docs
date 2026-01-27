@@ -52,6 +52,13 @@ export default defineConfig({
               { text: 'Как они работают', link: '/docs/product/zones/info' },
             ]
           },
+          {
+            text: 'Webhook [Post Request]',
+            items: [
+              { text: 'Как они работают', link: '/docs/product/webhook/info' },
+              { text: 'Дополнительная информация', link: '/docs/product/webhook/additional-info' },
+            ]
+          },
         ]
       },
       {
@@ -64,6 +71,14 @@ export default defineConfig({
           {
             text: 'Просмотр/вайп корзины игрока',
             link: '/docs/other/view-wipe-player-cart'
+          },
+          {
+            text: 'Смена клавиши открытия магазина',
+            link: '/docs/other/change-keybind'
+          },
+          {
+            text: 'Подключение уведомлений',
+            link: '/docs/other/notifications'
           }
         ]
       },
@@ -74,6 +89,7 @@ export default defineConfig({
             text: 'CSS',
             items: [
               { text: 'Смена заднего фона карточки товара', link: '/docs/custom-editor/css/product-bg' },
+              { text: 'Как понять какой блок редактировать?', link: '/docs/custom-editor/css/which-block' },
             ]
           },
           {
