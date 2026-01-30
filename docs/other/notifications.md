@@ -5,7 +5,7 @@
 <iframe
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/CCojFjSZoUU?si=9hGJFB2T_jKujm48"
+  src="https://www.youtube.com/embed/zPnBQn_5x7M?si=GpfwaNUaFgJMxZ8-"
   title="Discord Notification (YouTube)"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -13,9 +13,10 @@
   allowfullscreen>
 </iframe>
 
+
 #### Discord Notification — VK Video
 <iframe
-  src="https://vkvideo.ru/video_ext.php?oid=-205905941&id=456239018&hash=c296bed9437bab89&hd=3"
+  src="https://vkvideo.ru/video_ext.php?oid=-205905941&id=456239020&hash=19c357a585395796&hd=3"
   width="560"
   height="315"
   title="Discord Notification (VK)"
@@ -39,7 +40,7 @@
 <iframe
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/CCojFjSZoUU?si=9hGJFB2T_jKujm48"
+  src="https://www.youtube.com/embed/zPnBQn_5x7M?si=GpfwaNUaFgJMxZ8-"
   title="Telegram Notification  (YouTube)"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -49,7 +50,7 @@
 
 #### Telegram Notification — VK Video
 <iframe
-  src="https://vkvideo.ru/video_ext.php?oid=-205905941&id=456239018&hash=c296bed9437bab89&hd=3"
+  src="https://vkvideo.ru/video_ext.php?oid=-205905941&id=456239020&hash=19c357a585395796&hd=3"
   width="560"
   height="315"
   title="Telegram Notification  (VK)"
