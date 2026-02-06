@@ -27,6 +27,7 @@ export default defineConfig({
             items: [
               { text: 'YOMONEY', link: '/docs/payment-system/connecting/yomoney' },
               { text: 'FREEKASSA', link: '/docs/payment-system/connecting/freekassa' },
+              { text: 'PAYPALYCH', link: '/docs/payment-system/connecting/paypalych' },
             ]
           },
         ]
