@@ -48,6 +48,7 @@ export default defineConfig({
       {
         text: 'Товар',
         items: [
+          { text: 'Подключение кастомных сетов (123new)', link: '/docs/product/123newset-connection' },
           {
             text: 'Зоны выдачи',
             items: [
