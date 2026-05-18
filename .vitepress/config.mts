@@ -102,7 +102,16 @@ export default defineConfig({
             ]
           }
         ]
-      }
+      },
+      {
+        text: 'Биллинг',
+        items: [
+          {
+            text: 'Оформление магазина',
+            link: '/docs/billmgr/order/order'
+          },
+        ]
+      },
     ],
 
     socialLinks: [
