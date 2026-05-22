@@ -29,6 +29,7 @@ export default defineConfig({
               { text: 'YOMONEY', link: '/docs/payment-system/connecting/yomoney' },
               { text: 'FREEKASSA', link: '/docs/payment-system/connecting/freekassa' },
               { text: 'PAYPALYCH', link: '/docs/payment-system/connecting/paypalych' },
+              { text: 'TBANK', link: '/docs/payment-system/connecting/tbank' },
             ]
           },
         ]
@@ -107,8 +108,16 @@ export default defineConfig({
         text: 'Биллинг',
         items: [
           {
+            text: 'Первый заказ',
+            link: '/docs/billmgr/order/first'
+          },
+          {
             text: 'Оформление магазина',
             link: '/docs/billmgr/order/order'
+          },
+          {
+            text: 'Подключение после оформления',
+            link: '/docs/billmgr/order/connect'
           },
         ]
       },
