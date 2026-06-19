@@ -32,6 +32,12 @@ export default defineConfig({
               { text: 'TBANK', link: '/docs/payment-system/connecting/tbank' },
             ]
           },
+          {
+            text: 'Прочее',
+            items: [
+              { text: 'Засчитать платеж', link: '/docs/payment-system/other/submit-payment' },
+            ]
+          },
         ]
       },
       {
@@ -120,6 +126,12 @@ export default defineConfig({
             link: '/docs/billmgr/order/connect'
           },
         ]
+      },
+      {
+        text: 'Пользователи',
+        items: [
+            { text: 'Назначение сотрудником', link: '/docs/users/set-roles'},
+          ]
       },
     ],
 
