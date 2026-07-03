@@ -47,11 +47,10 @@ Result URL - оранжевая ссылка из настроек в магаз
 1. Выберите способ
    ☑ **Подтверждение с помощью текстового файла**
 
-2. Скачайте файл, предложенный PayPalych (см. скрин)
+2. Копируем код что указан в кавычках, или названеи файла (см скрин, выделено)
+![](/images/payment-system/connecting/paypalych/verif.png)
 
-3. Отрпавьте его поддержке HT, для того что бы она добавила его вам на сайт
-![](https://i.postimg.cc/gchx0zxD/image.png)
-
+3. Этот код вставляем в поле "Код верификации" в 7️⃣ пункте
 ---
 
 #### 5️⃣ Активация кассы
@@ -82,11 +81,21 @@ Result URL - оранжевая ссылка из настроек в магаз
 
 * Shop ID — в поле Paypalych shop id
 * Token — в поле Paypalych api key
+* Код верификацуии - код скопированный из 4️⃣ пункта
 
 ![](https://i.postimg.cc/qMtCysbP/image.png)
 
 Сохраните настройки.
 
+#### 8️⃣ Добавляем IP сайта в WhiteList
+
+В админ-панели переходим во вкладку "API интеграция":
+
+* Нажимаем WhiteList
+* Нажимаем добавить
+* Указываем IP из https://docs.hotlinetrade.net/docs/product/webhook/additional-info.html
+* Нажимаем "Обновить"
+![](/images/payment-system/connecting/paypalych/ip.jpg)
 ---
 
 ### ✅ Готово
