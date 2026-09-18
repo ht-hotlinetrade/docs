@@ -55,6 +55,13 @@ export default defineConfig({
       {
         text: 'Товар',
         items: [
+          {
+            text: 'Авто-выдача WARGM',
+            items: [
+              { text: 'Подключение WARGM', link: '/docs/product/wargm/connect' },
+              { text: 'Настройка товаров', link: '/docs/product/wargm/settings' },
+            ]
+          },
           { text: 'Подключение кастомных сетов (123new)', link: '/docs/product/123newset-connection' },
           {
             text: 'Зоны выдачи',
@@ -131,6 +138,12 @@ export default defineConfig({
         text: 'Пользователи',
         items: [
             { text: 'Назначение сотрудником', link: '/docs/users/set-roles'},
+          ]
+      },
+      {
+        text: 'Кастом страницы',
+        items: [
+            { text: 'Демо/гайд по использованию', link: '/docs/custom-pages/demo'},
           ]
       },
     ],
