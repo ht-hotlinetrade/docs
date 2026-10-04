@@ -29,6 +29,7 @@ export default defineConfig({
               { text: 'YOMONEY', link: '/docs/payment-system/connecting/yomoney' },
               { text: 'FREEKASSA', link: '/docs/payment-system/connecting/freekassa' },
               { text: 'PAYPALYCH', link: '/docs/payment-system/connecting/paypalych' },
+              { text: 'CENT', link: '/docs/payment-system/connecting/cent' },
               { text: 'TBANK', link: '/docs/payment-system/connecting/tbank' },
             ]
           },
@@ -96,6 +97,10 @@ export default defineConfig({
           {
             text: 'Подключение уведомлений',
             link: '/docs/other/notifications'
+          },
+          {
+            text: 'Блокировка',
+            link: '/docs/other/blocking'
           }
         ]
       },
