@@ -1,0 +1,511 @@
+/*
+  HOTLINETRADE: тема документации в стиле основного сайта.
+  Палитра — shadcn neutral из ht-main-site (resources/css/app.css), шрифт Instrument Sans.
+  Токены --ht-* задают цвета сайта, а --vp-* VitePress просто ссылаются на них.
+*/
+
+/* ===== 1. Палитра сайта ===== */
+:root {
+  --ht-bg: #ffffff;
+  --ht-fg: #0a0a0a;
+  --ht-muted: #f5f5f5;
+  --ht-muted-fg: #737373;
+  --ht-accent: #f5f5f5;
+  --ht-secondary: #ebebeb;
+  --ht-border: #ededed;
+  --ht-input: #e5e5e5;
+  --ht-primary: #171717;
+  --ht-primary-fg: #fafafa;
+  --ht-sidebar: #fafafa;
+  --ht-header: rgba(255, 255, 255, 0.8);
+  --ht-radius: 0.5rem;
+}
+
+.dark {
+  --ht-bg: #0a0a0a;
+  --ht-fg: #fafafa;
+  --ht-muted: #121212;
+  --ht-muted-fg: #a3a3a3;
+  --ht-accent: #262626;
+  --ht-secondary: #262626;
+  --ht-border: #262626;
+  --ht-input: #262626;
+  --ht-primary: #fafafa;
+  --ht-primary-fg: #171717;
+  --ht-sidebar: #0a0a0a;
+  --ht-header: rgba(10, 10, 10, 0.8);
+}
+
+/* ===== 2. Перенос палитры на токены VitePress ===== */
+:root,
+.dark {
+  --vp-font-family-base: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --vp-c-bg: var(--ht-bg);
+  --vp-c-bg-alt: var(--ht-sidebar);
+  --vp-c-bg-elv: var(--ht-bg);
+  --vp-c-bg-soft: var(--ht-muted);
+
+  --vp-c-text-1: var(--ht-fg);
+  --vp-c-text-2: var(--ht-muted-fg);
+  --vp-c-text-3: var(--ht-muted-fg);
+
+  --vp-c-border: var(--ht-input);
+  --vp-c-divider: var(--ht-border);
+  --vp-c-gutter: var(--ht-border);
+
+  --vp-c-brand-1: var(--ht-fg);
+  --vp-c-brand-2: var(--ht-muted-fg);
+  --vp-c-brand-3: var(--ht-primary);
+  --vp-c-brand-soft: var(--ht-secondary);
+
+  --vp-c-default-1: var(--ht-muted-fg);
+  --vp-c-default-2: var(--ht-secondary);
+  --vp-c-default-3: var(--ht-secondary);
+  --vp-c-default-soft: var(--ht-muted);
+
+  --vp-button-brand-bg: var(--ht-primary);
+  --vp-button-brand-border: var(--ht-primary);
+  --vp-button-brand-text: var(--ht-primary-fg);
+  --vp-button-brand-hover-bg: var(--ht-primary);
+  --vp-button-brand-hover-border: var(--ht-primary);
+  --vp-button-brand-hover-text: var(--ht-primary-fg);
+  --vp-button-brand-active-bg: var(--ht-primary);
+  --vp-button-brand-active-border: var(--ht-primary);
+  --vp-button-brand-active-text: var(--ht-primary-fg);
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-border: var(--ht-border);
+  --vp-button-alt-text: var(--ht-fg);
+  --vp-button-alt-hover-bg: var(--ht-muted);
+  --vp-button-alt-hover-border: var(--ht-border);
+  --vp-button-alt-hover-text: var(--ht-fg);
+
+  --vp-nav-bg-color: var(--ht-header);
+  --vp-nav-screen-bg-color: var(--ht-bg);
+  --vp-local-nav-bg-color: var(--ht-header);
+  --vp-sidebar-bg-color: var(--ht-sidebar);
+  --vp-nav-height: 65px;
+  --vp-layout-max-width: 1440px;
+
+  --vp-code-bg: var(--ht-muted);
+  --vp-code-color: var(--ht-fg);
+  --vp-code-block-bg: var(--ht-muted);
+  --vp-code-tab-bg: var(--ht-muted);
+  --vp-code-copy-code-bg: var(--ht-bg);
+  --vp-code-copy-code-border-color: var(--ht-border);
+  --vp-code-copy-code-hover-bg: var(--ht-muted);
+  --vp-code-copy-code-hover-border-color: var(--ht-border);
+
+  --vp-input-border-color: var(--ht-input);
+  --vp-input-switch-bg-color: var(--ht-secondary);
+
+  --vp-local-search-bg: var(--ht-bg);
+  --vp-local-search-result-bg: var(--ht-bg);
+  --vp-local-search-result-border: var(--ht-border);
+  --vp-local-search-result-selected-bg: var(--ht-muted);
+  --vp-local-search-result-selected-border: var(--ht-fg);
+  --vp-local-search-highlight-bg: var(--ht-primary);
+  --vp-local-search-highlight-text: var(--ht-primary-fg);
+
+  --vp-custom-block-info-bg: var(--ht-muted);
+  --vp-custom-block-info-border: var(--ht-border);
+  --vp-custom-block-tip-bg: var(--ht-muted);
+  --vp-custom-block-tip-border: var(--ht-border);
+  --vp-custom-block-tip-text: var(--ht-fg);
+  --vp-custom-block-details-bg: var(--ht-muted);
+}
+
+body {
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== 3. Шапка: как LandingHeader.vue ===== */
+.VPNavBar,
+.VPNavBar.has-sidebar,
+.VPNavBar:not(.home).top {
+  border-bottom: 1px solid color-mix(in srgb, var(--ht-border) 60%, transparent);
+  background-color: var(--ht-header) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(40px);
+  backdrop-filter: saturate(180%) blur(40px);
+}
+
+.VPNavBar .divider,
+.VPNavBar.has-sidebar .content-body,
+.VPNavBar .title,
+.VPNavBar.has-sidebar .title,
+.VPNavBar .content-body {
+  background-color: transparent !important;
+  border-bottom: 0 !important;
+}
+
+.VPNavBar .divider-line {
+  display: none;
+}
+
+.VPNavBarTitle .title {
+  border-bottom: 0 !important;
+}
+
+.ht-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ht-logo__mark {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--ht-primary);
+  color: var(--ht-primary-fg);
+}
+
+.ht-logo__mark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ht-logo__text {
+  display: none;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .ht-logo__text {
+    display: flex;
+  }
+}
+
+.ht-logo__name {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ht-fg);
+}
+
+.ht-logo__tagline {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--ht-muted-fg);
+}
+
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup .button {
+  border-radius: 6px;
+  padding: 0 14px !important;
+  height: 36px;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: var(--ht-fg) !important;
+  transition: background-color 0.15s;
+}
+
+.VPNavBar .vp-external-link-icon::after,
+.VPNavScreen .vp-external-link-icon::after {
+  display: none !important;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuGroup .button:hover {
+  background: var(--ht-muted);
+}
+
+.VPNavBarMenuLink.active {
+  background: var(--ht-muted);
+}
+
+.VPNavBarMenu .VPNavBarMenuLink,
+.VPNavBarMenu .VPFlyout {
+  display: flex;
+  align-items: center;
+}
+
+.VPFlyout .menu .VPMenu {
+  border: 1px solid var(--ht-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+.VPMenuLink .link {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+.VPMenuLink .link:hover {
+  background: var(--ht-muted) !important;
+  color: var(--ht-fg) !important;
+}
+
+/* ===== 4. Боковое меню и контент ===== */
+.VPSidebar {
+  border-right: 1px solid var(--ht-border);
+}
+
+.VPSidebarItem.level-0 > .item > .text,
+.VPSidebarItem.level-0 > .item > .link > .text {
+  font-size: 13px;
+  font-weight: 600 !important;
+  color: var(--ht-fg);
+}
+
+.VPSidebarItem .link {
+  border-radius: 6px;
+}
+
+.VPSidebarItem.is-link > .item > .link:hover .text {
+  color: var(--ht-fg);
+}
+
+.VPSidebarItem.is-active > .item > .link > .text {
+  font-weight: 600;
+  color: var(--ht-fg);
+}
+
+.VPSidebarItem.is-active > .item > .indicator {
+  background-color: var(--ht-fg);
+}
+
+.vp-doc a {
+  font-weight: 500;
+  color: var(--ht-fg);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--ht-fg) 30%, transparent);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+
+.vp-doc a:hover {
+  color: var(--ht-fg);
+  text-decoration-color: var(--ht-fg);
+}
+
+.vp-doc h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.vp-doc h2 {
+  border-top-color: var(--ht-border);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h3 {
+  font-weight: 600;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--ht-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.vp-doc tr {
+  border-top: 0;
+  background-color: transparent !important;
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 0;
+  border-bottom: 1px solid var(--ht-border);
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: 0;
+}
+
+.vp-doc th {
+  background: var(--ht-muted);
+  font-weight: 600;
+  color: var(--ht-fg);
+}
+
+.vp-doc img {
+  border: 1px solid var(--ht-border);
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+.vp-doc iframe {
+  max-width: 100%;
+  border: 1px solid var(--ht-border);
+  border-radius: 12px;
+}
+
+.vp-doc div[class*='language-'],
+.vp-doc .custom-block {
+  border-radius: 12px;
+}
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--ht-border);
+}
+
+.vp-doc .custom-block {
+  border: 1px solid var(--ht-border);
+}
+
+.VPDocFooter .pager-link {
+  border-radius: 12px;
+  border-color: var(--ht-border);
+}
+
+.VPDocFooter .pager-link:hover {
+  border-color: var(--ht-fg);
+}
+
+.VPDocFooter .pager-link .title {
+  color: var(--ht-fg);
+}
+
+.VPLocalNav {
+  border-bottom-color: var(--ht-border);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+
+.DocSearch-Button,
+.VPNavBarSearch .DocSearch-Button {
+  border: 1px solid var(--ht-border) !important;
+  border-radius: var(--ht-radius) !important;
+  background: transparent !important;
+}
+
+/* ===== 5. Главная документации ===== */
+.VPHome .VPHero .name,
+.VPHome .VPHero .text {
+  letter-spacing: -0.035em;
+}
+
+.VPHome .VPHero .name .clip {
+  background: none;
+  -webkit-text-fill-color: var(--ht-fg);
+  color: var(--ht-fg);
+}
+
+.VPHome .VPHero .tagline {
+  color: var(--ht-muted-fg);
+}
+
+.VPHome .VPButton {
+  border-radius: var(--ht-radius) !important;
+  font-weight: 600;
+}
+
+.VPFeature {
+  border: 1px solid var(--ht-border) !important;
+  border-radius: 16px !important;
+  background: var(--ht-bg) !important;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.VPFeature.link:hover {
+  border-color: color-mix(in srgb, var(--ht-fg) 30%, transparent) !important;
+  background: var(--ht-muted) !important;
+}
+
+.VPFeature .icon {
+  border: 1px solid var(--ht-border);
+  border-radius: 10px;
+  background: var(--ht-muted);
+}
+
+.VPFeature .link-text-value {
+  color: var(--ht-fg);
+}
+
+/* Карточки разделов на странице /docs/ */
+.ht-cards {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+@media (min-width: 640px) {
+  .ht-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.vp-doc a.ht-card {
+  display: block;
+  border: 1px solid var(--ht-border);
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.vp-doc a.ht-card:hover {
+  border-color: color-mix(in srgb, var(--ht-fg) 30%, transparent);
+  background: var(--ht-muted);
+}
+
+.ht-card__title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ht-fg);
+}
+
+.ht-card__text {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ht-muted-fg);
+}
+
+/* ===== 6. Подвал: одна строка с копирайтом и контактами ===== */
+.ht-footer {
+  position: relative;
+  z-index: 26;
+  border-top: 1px solid var(--ht-border);
+  background: var(--ht-bg);
+}
+
+.ht-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  font-size: 13px;
+  color: var(--ht-muted-fg);
+}
+
+@media (min-width: 640px) {
+  .ht-footer__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.ht-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.ht-footer__links a {
+  transition: color 0.15s;
+}
+
+.ht-footer__links a:hover {
+  color: var(--ht-fg);
+}
