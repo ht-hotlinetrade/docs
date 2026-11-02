@@ -114,6 +114,7 @@ export default defineConfig({
           { text: 'Создание товара и типы', link: '/docs/product/types' },
           { text: 'Кастомный файл', link: '/docs/product/custom-file' },
           { text: 'Аренда и возврат услуг', link: '/docs/product/rental' },
+          { text: '3D-модель товара', link: '/docs/product/3d-model' },
           {
             text: 'Авто-выдача WARGM',
             items: [
